@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xpd.xpdtweet"
+    android:versionCode="1"
+    android:versionName="1.0" 
+    android:configChanges="orientation" 
+    android:screenOrientation="portrait"
+>
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name="com.xpd.xpdtweet.XPDApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.xpd.xpdtweet.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.xpd.xpdtweet.PollActivity"
+            android:label="@string/Polling" />
+        <activity
+            android:name="com.xpd.xpdtweet.Preferences"
+            android:label="@string/titlePrefs" />
+        <activity
+            android:name="com.xpd.xpdtweet.TweetReplys"
+            android:label="@string/Retweet" />
+        <activity
+            android:name="com.xpd.xpdtweet.PollReply"
+            android:label="@string/Polling" />
+
+        <service
+            android:name="com.xpd.xpdtweet.Learningservice"
+            android:enabled="true" >
+        </service>
+        <service android:name="pt.utl.ist.cmov.wifidirect.service.SimWifiP2pService" >
+        </service>
+
+        <activity
+            android:name="com.xpd.xpdtweet.ImageActivity"
+            android:label="@string/title_activity_image" >
+        </activity>
+        <activity
+            android:name="com.xpd.xpdtweet.ImageViewingActivity"
+            android:label="@string/title_activity_image" >
+        </activity>
+        <activity
+            android:name="com.xpd.xpdtweet.Demo"
+            android:label="@string/title_activity_demo" >
+        </activity>
+    </application>
+
+</manifest>

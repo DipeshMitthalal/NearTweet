@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+     <PreferenceCategory
+     android:title="Options">
+         <EditTextPreference 
+             android:title="Nick Name" 
+             android:key="userName"
+             android:enabled="true"
+             android:summary="Tap to Enter your Nick name"
+             android:dialogTitle="Enter your Nick name"/>
+     
+        
+     </PreferenceCategory>
+        </PreferenceScreen>

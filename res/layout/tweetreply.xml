@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     >
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- <3> -->
+
+        <TextView
+            android:id="@+id/textUser_r"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Sender_Name"
+            android:textStyle="bold" />
+
+        <!-- <4> -->
+
+        <TextView
+            android:id="@+id/textCreatedAt_r"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/mintesago" />
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:hint="@string/testString"
+        android:text="@string/sample_tweet"
+        android:textIsSelectable="true" />
+
+    <ListView
+        android:id="@+id/list_r"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.90"
+        android:cacheColorHint="#00000000"
+        android:listSelector="@android:color/transparent"
+        android:transcriptMode="alwaysScroll" />
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/editText_reply"
+            android:layout_width="fill_parent"
+            android:layout_height="63dp"
+            android:hint="@string/reply_hint"
+            android:inputType="textMultiLine|textNoSuggestions" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+
+        <Button
+            android:id="@+id/sendToAll_button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/b_sendToAll"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/sendToFB_button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/b_sendToFB" 
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/sendToOwner_button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/b_sendToOwner"
+            android:layout_weight="1" />
+
+          <Button
+              android:id="@+id/spam_button"
+              style="?android:attr/buttonBarButtonStyle"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="@string/b_spam" />
+
+    </LinearLayout>
+
+</LinearLayout>

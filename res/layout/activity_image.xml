@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    tools:context=".ImageActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- <3> -->
+
+        <TextView
+            android:id="@+id/textUser_i"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Sender_Name"
+            android:textStyle="bold" />
+
+        <!-- <4> -->
+
+        <TextView
+            android:id="@+id/textCreatedAt_i"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/mintesago" />
+   
+</LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/footer1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+
+        <Button
+            android:id="@+id/gallery"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="selectImagefromgallery"
+            android:text="@string/gallery" />
+
+        <Button
+            android:id="@+id/camera"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="fromcamera"
+            android:text="@string/camera" />
+
+        <Button
+            android:id="@+id/button1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/image_send" />
+
+        <Button
+            android:id="@+id/goback"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/button_back" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/message_i"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:hint="@string/testString"
+        android:text="@string/mess_image"
+        android:textIsSelectable="true" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/message_i"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:contentDescription="@string/image"
+        android:src="@drawable/ic_launcher" />
+
+</RelativeLayout>

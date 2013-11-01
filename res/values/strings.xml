@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">XPDTweet</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="titlePrefs">Prerferences</string>
+    <string name="b_send">SEND</string>
+    <string name="Firefox">Firefox comes to Android</string>
+    <string name="Slashdot">Slashdot</string>
+    <string name="mintesago">10 minutes ago</string>
+    <string name="b_sendToOwner">sendToOwner</string>
+    <string name="b_sendToAll">sendToAll</string>
+    <string name="b_sendToFB">sendToFB</string>
+    <string name="testString">testString</string>
+    <string name="b_createpoll">Create Poll</string>
+    <string name="b_createTweet">Create Post</string>
+    <string name="b_createPoll">Create Poll</string>
+    <string name="hint">Enter your thoughts here</string>
+    <string name="b_imageoptions">Image Sharing</string>
+    <string name="hint_poll">Enter the options of your poll</string>
+    <string name="b_addPollOptions">Add Options</string>
+    <string name="Polling">Polling</string>
+    <string name="button_back">GoBack</string>
+    <string name="button_vote">Vote</string>
+    <string name="title_activity_image">Image Sharing</string>
+    <string name="image">image</string>
+    <string name="camera">camera</string>
+    <string name="gallery">gallery</string>
+    <string name="Retweet">Retweet</string>
+    <string name="reply_hint">Enter your reply here</string>
+    <string name="b_spam">It\'s a SPAM</string>
+    <string name="Sender_Name">Sender Name</string>
+    <string name="sample_tweet">Sample Tweet Message</string>
+    <string name="Poll_Question">Poll Question</string>
+    <string name="image_send">send</string>
+    <string name="mess_image">message with image</string>
+    <string name="title_activity_demo">Demo</string>
+ <string name="port">10001</string>
+ <string name="serviceStop">Stop Service</string>
+  <string name="serviceStart">Start Service</string>
+  <string name="ponFB">Post on FaceBook wall?</string>
+</resources>
